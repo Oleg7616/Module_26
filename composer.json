@@ -1,0 +1,14 @@
+{
+    "name": "your-vendor-name/package-name",
+    "description": "A short description of what your package does",
+
+    "autoload": {
+        "psr-4": {
+        "Tutsplus\\Library\\": "src"
+        }
+        },
+
+    "require": {
+        "twig/twig": "3.3"
+    }
+}
