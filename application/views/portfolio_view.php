@@ -1,4 +1,4 @@
-<div class="protfolio_view">
+<div class="portfolio_view">
 <h1>Портфолио</h1>
 <p>
 <table>
