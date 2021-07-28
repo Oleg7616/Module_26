@@ -1,6 +1,7 @@
 {
-    "name": "your-vendor-name/package-name",
-    "description": "A short description of what your package does",
+    "name": "project/t",
+    "description": "TinyMVC",
+    
 
     "autoload": {
         "psr-4": {
@@ -9,6 +10,7 @@
         },
 
     "require": {
-        "twig/twig": "3.3"
+        "twig/twig": "3.3",
+        "tomwalder/php-gds": "5.1"
     }
 }
