@@ -52,12 +52,24 @@ class Route {
     }
 
 
-        function ErrorPage404() {
+        /*function ErrorPage404() {
         $host = 'http://'.$_SERVER['HTTP_HOST'].'/';
         header('HTTP/1.1 404 Not Found');
         header('Status: 404 Not Found');
         header('location:'.$host.'404');
-        }
+        }*/
+
+        public static function ErrorPage404() {
+            $host = 'http://' . $_SERVER['HTTP_HOST'];
+            // echo $host . '?error=404';
+            // header('HTTP/1.1 404 NOT FOUND');
+            // header('Status: 404 Not Found');
+            // header('location:' . $host . '/404');
+            //header('location:' . $host . '?error=404');
+            http_response_code(404);
+            include __DIR__ . '/../views/404_view.php'; // provide your own HTML for the error page
+            die();
+         }
 
 }
 
